@@ -6,9 +6,8 @@
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<!-- the application context definition for the oFilmSite DispatcherServlet -->
-	<bean class="oFilmSite.Controller1"/>
-	<bean class="oFilmSite.OFilmApiController" />
-	<bean class="oFilmSite.Test"/>
+	<bean class="oFilmSiteControllers.OFilmApiController" />
+	<bean class="oFilmSiteControllers.Test"/>
 	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

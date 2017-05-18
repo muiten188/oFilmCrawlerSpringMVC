@@ -3,36 +3,31 @@ package model;
 import common.Utility;
 
 public class ApiResult {
-	public boolean IsSuccess;
-	public String Message;
-	public String Data;
+	public boolean isSuccess = true;
+	public String message;
+	public String data;
 
 	public boolean isIsSuccess() {
-		return IsSuccess;
+		return isSuccess;
 	}
 
 	public void setIsSuccess(boolean isSuccess) {
-		IsSuccess = isSuccess;
+		this.isSuccess = isSuccess;
 	}
 
 	public String getMessage() {
-		return Message;
+		return message;
 	}
 
 	public void setMessage(String message) {
-		Message = message;
+		this.message = message;
 	}
 
 	public String getData() {
-		return Data;
+		return data;
 	}
 
 	public void setData(Object oData) {
-		try {
-			Data = Utility.ConvertToJson(oData);
-		} catch (Exception e) {
-			Data = "";
-		}
-
+		data = Utility.ConvertToJson(oData);
 	}
 }

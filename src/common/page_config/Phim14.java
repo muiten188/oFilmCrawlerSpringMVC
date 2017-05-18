@@ -6,12 +6,12 @@ package common.page_config;
 public class Phim14 {
     //film
     public static final String LIST_FILM = "#phimchieurap .list_film ul li";
-    public static final String STATUS = "li .status";
-    public static final String POSTERURL = "li .thumb_film .poster .img a img";
-    public static final String URL = "li .thumb_film .poster .img a";
-    public static final String NAME1 = "li .desc .name";
-    public static final String NAME2 = "li .desc .name2";
-    public static final String CATEGORY_VIEWS = "li .tooltip.hide dl dd";
+    public static final String STATUS = ".status";
+    public static final String POSTERURL = ".thumb_film .poster .img a img";
+    public static final String URL = ".thumb_film .poster .img a";
+    public static final String NAME1 = ".desc .name";
+    public static final String NAME2 = ".desc .name2";
+    public static final String CATEGORY_VIEWS = ".tooltip.hide dl dd";
     public static final String YEAR = "";
     //film detail
     public static final String THUMBNAIL= "#content .intro .thumbnail img";
