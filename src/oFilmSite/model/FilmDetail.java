@@ -1,4 +1,4 @@
-package oFilmSite.model;
+package ofilmsite.model;
 /**
  * Created by haiphutruoi on 5/8/2017.
  */

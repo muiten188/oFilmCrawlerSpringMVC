@@ -14,12 +14,7 @@
 
 	<mvc:annotation-driven />
 	
-	<context:component-scan base-package="oFilmSite" />
-
-	<!-- the application context definition for the oFilmSite DispatcherServlet -->
-<!--	<bean class="oFilmSite.oFilmSiteControllers.OFilmApiController" />
- 	<bean class="oFilmSite.oFilmSiteControllers.Test"/>
-	<bean class="oFilmSite.services.servicesImpl.Phim14ServicesImpl"/> -->
+	<context:component-scan base-package="ofilmsite" />
 	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

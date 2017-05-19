@@ -1,4 +1,4 @@
-package oFilmSite.common;
+package ofilmsite.common;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

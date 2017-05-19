@@ -1,4 +1,4 @@
-package oFilmSite.common.page_config;
+package ofilmsite.common.page_config;
 
 /**
  * Created by Bui Dinh BACH on 5/8/2017.

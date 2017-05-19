@@ -1,4 +1,4 @@
-package oFilmSite.services.servicesImpl;
+package ofilmsite.services.servicesImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +9,13 @@ import org.jsoup.select.Elements;
 import org.jsoup.nodes.Element;
 import org.springframework.stereotype.Service;
 
-import oFilmSite.common.page_config.Phim14;
-import oFilmSite.model.Film;
-import oFilmSite.services.iservices.IPhim14Services;
+import ofilmsite.common.page_config.Phim14;
+import ofilmsite.model.Film;
+import ofilmsite.services.iservices.IPhimServices;
 
 @Service
-public class Phim14ServicesImpl implements IPhim14Services {
-	public List<Film> getListFilm(String url){
+public class Phim14ServicesImpl implements IPhimServices {
+	public List<Film> getListFilm(String url) throws Exception{
 		List<Film> listFilm=new ArrayList<>();
         try {
             Document docFilm = Jsoup.connect(url).get();
@@ -32,7 +32,7 @@ public class Phim14ServicesImpl implements IPhim14Services {
                 listFilm.add(oFilm);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Exception("Get list Film from url \""+url+"\" fail! could your url wrong please check url again. Thank you");
         }
 		return listFilm;
 	}

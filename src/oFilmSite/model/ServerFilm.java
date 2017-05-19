@@ -1,4 +1,4 @@
-package oFilmSite.model;
+package ofilmsite.model;
 import java.util.List;
 
 /**
