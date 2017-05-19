@@ -1,6 +1,6 @@
-package model;
+package oFilmSite.model;
 
-import common.Utility;
+import oFilmSite.common.Utility;
 
 public class ApiResult {
 	public boolean isSuccess = true;

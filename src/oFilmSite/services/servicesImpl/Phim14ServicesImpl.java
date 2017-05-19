@@ -1,4 +1,4 @@
-package aplication.services.servicesImpl;
+package oFilmSite.services.servicesImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +8,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.jsoup.nodes.Element;
 import org.springframework.stereotype.Service;
-import aplication.services.iservices.IPhim14Services;
-import common.page_config.Phim14;
-import model.Film;
 
-@Service ("phim14Services")
+import oFilmSite.common.page_config.Phim14;
+import oFilmSite.model.Film;
+import oFilmSite.services.iservices.IPhim14Services;
+
+@Service
 public class Phim14ServicesImpl implements IPhim14Services {
 	public List<Film> getListFilm(String url){
 		List<Film> listFilm=new ArrayList<>();

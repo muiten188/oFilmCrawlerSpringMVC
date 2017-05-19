@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<mvc:annotation-driven />
+	
+	<context:component-scan base-package="oFilmSite" />
 
 	<!-- the application context definition for the oFilmSite DispatcherServlet -->
-	<bean class="oFilmSiteControllers.OFilmApiController" />
-	<bean class="oFilmSiteControllers.Test"/>
+<!--	<bean class="oFilmSite.oFilmSiteControllers.OFilmApiController" />
+ 	<bean class="oFilmSite.oFilmSiteControllers.Test"/>
+	<bean class="oFilmSite.services.servicesImpl.Phim14ServicesImpl"/> -->
 	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

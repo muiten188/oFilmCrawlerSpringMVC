@@ -1,5 +1,6 @@
-package oFilmSiteControllers;
+package oFilmSite.oFilmSiteControllers;
 
+import java.net.URLDecoder;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,24 +10,25 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import common.Utility;
-import aplication.services.iservices.IPhim14Services;
-import aplication.services.servicesImpl.Phim14ServicesImpl;
-import model.ApiResult;
-import model.Film;
+import oFilmSite.common.Utility;
+import oFilmSite.model.ApiResult;
+import oFilmSite.model.Film;
+import oFilmSite.services.iservices.IPhim14Services;
+import oFilmSite.services.servicesImpl.Phim14ServicesImpl;
 
 @RestController
 public class OFilmApiController {
-	
+
 	@Autowired
-	Phim14ServicesImpl sPhim14Services =new Phim14ServicesImpl();
+	IPhim14Services sPhim14Services;
+
 	@RequestMapping(value = "/getListFilm/url={url}", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody String getListFilm(@PathVariable String url) {
+		String url_Decode = URLDecoder.decode(url);
 		ApiResult apiResult = new ApiResult();
 		try {
-			List<Film> lstFilm = sPhim14Services.getListFilm("http://phim14.net/");
+			List<Film> lstFilm = sPhim14Services.getListFilm(url_Decode);
 			apiResult.setData(lstFilm);
-			
 		} catch (Exception e) {
 			apiResult.setIsSuccess(false);
 			apiResult.setMessage(e.toString());

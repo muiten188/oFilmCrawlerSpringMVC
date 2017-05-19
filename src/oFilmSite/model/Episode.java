@@ -1,4 +1,4 @@
-package model;
+package oFilmSite.model;
 /**
  * Created by Bui Dinh BACH on 5/9/2017.
  */
