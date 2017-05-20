@@ -24,4 +24,8 @@ public class Phim14 {
     public static final String LIST_EPISODE="ul li";
     public static final String ORIGNAl_LINK_EPISODE="a";
     public static final String CODE_WATCH_LINK="#movie script";//index 2
+    
+    
+    //Api get link watch
+    public static final String Api_Get_Link="http://player9.phim14.net/gkphp1012pc/plugins/gkpluginsphp.php";
 }

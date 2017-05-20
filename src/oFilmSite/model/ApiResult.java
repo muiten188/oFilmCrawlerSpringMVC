@@ -28,6 +28,10 @@ public class ApiResult {
 	}
 
 	public void setData(Object oData) {
-		data = Utility.ConvertToJson(oData);
+		if (String.class.isInstance(oData)) {
+			data = oData.toString();
+		} else {
+			data = Utility.ConvertToJson(oData);
+		}
 	}
 }

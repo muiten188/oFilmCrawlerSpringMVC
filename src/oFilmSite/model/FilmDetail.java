@@ -1,4 +1,7 @@
 package ofilmsite.model;
+
+import java.util.*;
+
 /**
  * Created by haiphutruoi on 5/8/2017.
  */
@@ -15,6 +18,7 @@ public class FilmDetail {
     public String Care;
     public String Status;
     public String Watch_URL;
+    public List<ServerFilm> ListServerFilm;
 	public String getThumbnail() {
 		return thumbnail;
 	}
