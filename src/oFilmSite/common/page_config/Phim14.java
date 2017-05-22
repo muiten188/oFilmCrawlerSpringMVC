@@ -16,6 +16,7 @@ public class Phim14 {
     //film detail
     public static final String THUMBNAIL= "#content .intro .thumbnail img";
     public static final String FILM_INFO= "#content .intro .info div";
+    public static final String FILM_Description="#content .intro .description";
     public static final String WATCH_FILM_URl="#content .intro .phimbtn a";
     //episode link
     public static final String SERVER_LIST="#movie_info #server_list";

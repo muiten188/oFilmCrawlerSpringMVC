@@ -1,37 +1,42 @@
 package ofilmsite.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import ofilmsite.common.Utility;
 
 public class ApiResult {
-	public boolean isSuccess = true;
-	public String message;
-	public String data;
-
-	public boolean isIsSuccess() {
-		return isSuccess;
+	@JsonProperty("IsSuccess")
+	public boolean IsSuccess = true;
+	@JsonProperty("Message")
+	public String Message;
+	@JsonProperty("Data")
+	public String Data;
+	@JsonProperty("IsSuccess")
+	public boolean getIsSuccess() {
+		return IsSuccess;
 	}
 
 	public void setIsSuccess(boolean isSuccess) {
-		this.isSuccess = isSuccess;
+		this.IsSuccess = isSuccess;
 	}
-
+	@JsonProperty("Message")
 	public String getMessage() {
-		return message;
+		return Message;
 	}
 
 	public void setMessage(String message) {
-		this.message = message;
+		this.Message = message;
 	}
-
+	@JsonProperty("Data")
 	public String getData() {
-		return data;
+		return Data;
 	}
 
 	public void setData(Object oData) {
 		if (String.class.isInstance(oData)) {
-			data = oData.toString();
+			Data = oData.toString();
 		} else {
-			data = Utility.ConvertToJson(oData);
+			Data = Utility.ConvertToJson(oData);
 		}
 	}
 }

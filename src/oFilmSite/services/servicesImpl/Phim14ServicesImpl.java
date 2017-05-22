@@ -53,9 +53,11 @@ public class Phim14ServicesImpl implements IPhimServices {
 		try {
 			Document docFilmDetail = Jsoup.connect(url).get();
 			Elements eListFilm = docFilmDetail.select(Phim14.THUMBNAIL);
-			oFilmDetail.thumbnail = eListFilm.attr("src");
+			oFilmDetail.Thumbnail = eListFilm.attr("src");
 			Elements listFilmInfo = docFilmDetail.select(Phim14.FILM_INFO);
 			oFilmDetail.Name = listFilmInfo.get(0).select("font").text();
+			Elements FilmDescription = docFilmDetail.select(Phim14.FILM_Description);
+			oFilmDetail.Description = FilmDescription.text();
 			oFilmDetail.Director = listFilmInfo.get(1).select("a").text();
 			oFilmDetail.Actor = listFilmInfo.get(2).select("a").text();
 			oFilmDetail.Category = listFilmInfo.get(3).select("a").text();
