@@ -1,4 +1,4 @@
-package ofilmsite.common;
+package oFilmSite.common;
 
 import java.io.DataOutputStream;
 import java.io.IOException;

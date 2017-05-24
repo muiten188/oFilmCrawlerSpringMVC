@@ -1,4 +1,4 @@
-package ofilmsite.common;
+package oFilmSite.common;
 
 public enum FilmEnum {
 	PHIM14

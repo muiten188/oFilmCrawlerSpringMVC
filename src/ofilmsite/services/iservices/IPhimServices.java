@@ -1,11 +1,11 @@
-package ofilmsite.services.iservices;
+package oFilmSite.services.iservices;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import ofilmsite.model.Film;
-import ofilmsite.model.FilmDetail;
+import oFilmSite.model.Film;
+import oFilmSite.model.FilmDetail;
 
 @Service
 public interface IPhimServices {

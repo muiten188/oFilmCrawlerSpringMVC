@@ -1,4 +1,4 @@
-package ofilmsite.services.servicesImpl;
+package oFilmSite.services.servicesImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,14 +9,14 @@ import org.jsoup.select.Elements;
 import org.jsoup.nodes.Element;
 import org.springframework.stereotype.Service;
 
-import ofilmsite.common.Curl;
-import ofilmsite.common.HandlerException;
-import ofilmsite.common.page_config.Phim14;
-import ofilmsite.model.Episode;
-import ofilmsite.model.Film;
-import ofilmsite.model.FilmDetail;
-import ofilmsite.model.ServerFilm;
-import ofilmsite.services.iservices.IPhimServices;
+import oFilmSite.common.Curl;
+import oFilmSite.common.HandlerException;
+import oFilmSite.common.page_config.Phim14;
+import oFilmSite.model.Episode;
+import oFilmSite.model.Film;
+import oFilmSite.model.FilmDetail;
+import oFilmSite.model.ServerFilm;
+import oFilmSite.services.iservices.IPhimServices;
 
 @Service
 public class Phim14ServicesImpl implements IPhimServices {

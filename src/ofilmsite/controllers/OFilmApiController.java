@@ -1,4 +1,4 @@
-package ofilmsite.controllers;
+package oFilmSite.controllers;
 
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import ofilmsite.common.FilmEnum;
-import ofilmsite.common.Utility;
-import ofilmsite.model.ApiResult;
-import ofilmsite.model.Film;
-import ofilmsite.model.FilmDetail;
-import ofilmsite.services.iservices.IPhimServices;
+import oFilmSite.common.FilmEnum;
+import oFilmSite.common.Utility;
+import oFilmSite.model.ApiResult;
+import oFilmSite.model.Film;
+import oFilmSite.model.FilmDetail;
+import oFilmSite.services.iservices.IPhimServices;
 
 @RestController
 public class OFilmApiController {

@@ -14,7 +14,7 @@
 
 	<mvc:annotation-driven />
 	
-	<context:component-scan base-package="ofilmsite" />
+	<context:component-scan base-package="oFilmSite" />
 	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

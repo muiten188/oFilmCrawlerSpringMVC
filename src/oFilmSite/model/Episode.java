@@ -1,4 +1,4 @@
-package ofilmsite.model;
+package oFilmSite.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

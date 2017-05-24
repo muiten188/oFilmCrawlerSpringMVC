@@ -1,4 +1,4 @@
-package ofilmsite.controllers;
+package oFilmSite.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

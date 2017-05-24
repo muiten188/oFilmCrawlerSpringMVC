@@ -1,8 +1,8 @@
-package ofilmsite.model;
+package oFilmSite.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import ofilmsite.common.Utility;
+import oFilmSite.common.Utility;
 
 public class ApiResult {
 	@JsonProperty("IsSuccess")
