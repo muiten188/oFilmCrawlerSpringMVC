@@ -28,5 +28,5 @@ public class Phim14 {
     
     
     //Api get link watch
-    public static final String Api_Get_Link="http://player9.phim14.net/gkphp1014pc/plugins/gkpluginsphp.php";
+    public static final String Api_Get_Link="http://player10.phim14.net/gkphp1016pc/plugins/gkpluginsphp.php";
 }
